@@ -13,10 +13,10 @@ Features of the product:
       - 1-8 to select coordinate on the map,
       - 9 to switch from X to Y and vice versa
   - Button (external interrupt)
-      - Switch stage from Welcome screen to Game
-      - Confirm shot after coordinate is inputed
+      - Switch stage from Welcome screen to Game.
+      - Initalize shot if coordinates locked.
   - Buzzer
-      - Toggle 5 times when the game is over (Win and Lose)
+      - Toggle 5 times when the game is over (Win and Lose).
   - LED
       - Blink 3 times if shot is hit.
 
@@ -25,4 +25,9 @@ How to play:
 - After confirm the coordinate, player can press the SW_INT(GP15) to shot
 - If shot success, the map will display 'X' at the shot coordinate. Otherwise, the map remain the same.
 - Win condition:    - Player shots all 5 ships within 15 shots.
-- Lose condition:   - Less than 5 ship is shot OR/AND total shot > 15
+- Lose condition:   - Less than 5 ships is shot OR/AND total shot > 15
+
+
+Note: 
+- 'Main.c' and 'System_config.h' are source code for the program
+- Other addtional files are configuration of NUC140 and library.
